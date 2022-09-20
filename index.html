@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demoLength"></p>
+    <p id="demoIndexof"></p>
+    <p id="demoLastIndexof"></p>
+    <p id="demoSearch"></p>
+    <p id="demoToUpperCase"></p>
+    <p id="demoToLowerCase"></p>
+    <p id="demoSlice"></p>
+    <p id="demoSliceNegatif"></p>
+    <p id="demoSliceAll"></p>
+
+    <p id="demoSubstring"></p>
+
+    <p id="demoSubstr"></p>
+    <p id="demoCharAt"></p>
+    <p id="demoCharCodeAt"></p>
+    <p id="demoConcact"></p>
+    <p id="demoReplace"></p>
+    <p id="adiArray"></p>
+    <p id="adiArrayVirgül"></p>
+    <p id="adiIncludes"></p>
+    <p id="adiIncludes2"></p>
+
+
+    <script>
+  var adi="Elma, Armut, Ayva, Mandalina, Karpuz, Kavun, Armut"
+var adiArrayBosluk=adi.split(" ")
+var adiArrayVirgül=adi.split(",")
+  document.getElementById('demoLength').innerHTML="Uzunluk: " + adi.length
+  document.getElementById('demoIndexof').innerHTML="Belirtilen String'in index numarası: " + adi.indexOf('Armut')
+  document.getElementById('demoLastIndexof').innerHTML="Belirtilen String 'in index numarası: " + adi.lastIndexOf('Armut')
+
+  document.getElementById('demoSearch').innerHTML="Belirtilen String 'in index numarası: " + adi.search('Armut')
+  document.getElementById('demoToUpperCase').innerHTML="Tüm harfler büyük: " + adi.toUpperCase()
+  document.getElementById('demoToLowerCase').innerHTML="Tüm harfler küçük: " + adi.toLowerCase()
+  document.getElementById('demoSlice').innerHTML=" Slice Parçalanan ifade: " + adi.slice(3,11)
+  document.getElementById('demoSliceNegatif').innerHTML=" Slice Parçalanan ifade: " + adi.slice(-11,-6)
+  document.getElementById('demoSliceAll').innerHTML= " Slice Parçalanan ifade: " + adi.slice(5)
+
+  document.getElementById('demoSubstring').innerHTML=" substring Parçalanan ifade: " + adi.substring(2,8)
+  document.getElementById('demoSubstr').innerHTML="Substr Parçalanan ifade: " + adi.substr(3,10)
+  document.getElementById('demoCharAt').innerHTML="Verilen Index numarasının string karşılığı: " + adi.charAt(2)
+  document.getElementById('demoCharCodeAt').innerHTML="Verilen Index numarasının string karşılığının unicode karşılığı: " + adi.charCodeAt(2)
+  document.getElementById('demoConcact').innerHTML="String ifadeye 2 veya daha fazla string ifadeyi birleştirme: " + adi.concat(" " + "," + "Çilek")
+  document.getElementById('demoReplace').innerHTML="Değiştirilmesi istenen String ifadeye göre verilen yeni string ifadenin konulması: " + adi.replace("Elma", "Kiraz")
+  document.getElementById('adiArray').innerHTML="Boşluğa göre array oluşturma: " + adiArrayBosluk[2]
+  document.getElementById('adiArrayVirgül').innerHTML="Virgüle göre array oluşturma: " + adiArrayVirgül[2]
+  document.getElementById('adiIncludes').innerHTML="Belirtilen string ifadenin var olup olmadığının kontrolü: " + adi.includes("Mandalina")
+  document.getElementById('adiIncludes2').innerHTML="Belirtilen string ifadenin var olup olmadığının kontrolü: " + adi.includes("Erik")
+
+//includes =>Belirtilen string değerin var olup olmadığını kontrol ediyor varsa true yoksa false döner
+    </script>
+</body>
+</html>
